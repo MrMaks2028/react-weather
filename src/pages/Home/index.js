@@ -24,7 +24,11 @@ export default function Home() {
             <h1>Home page</h1>
             <Form searchHandler={search} />
 
-            {(state.cod) ? <h3>{Math.round(state.main.temp - 273.15)} &deg;C</h3> : ''}
+            {(state.cod) ? <h2>{state.name}</h2> : ''}
+            {(state.cod) ? <h2>{state.weather[0].main}: {state.weather[0].description}</h2> : ''}
+            {(state.cod) ? <img src={`${`https://openweathermap.org/img/wn/${state.weather[0].icon}@2x.png`}`}></img> : ''}
+            {(state.cod) ? <h3>temp: {Math.round(state.main.temp - 273.15)} &deg;C</h3> : ''}
+            {(state.cod) ? <h3>wind speed: {Math.round(state.wind.speed)} M/S</h3> : ''}
 
         </div>
     )
