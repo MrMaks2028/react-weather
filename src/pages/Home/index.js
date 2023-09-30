@@ -21,14 +21,17 @@ export default function Home() {
     return (
         <div>
             <Navigation />
-            <h1>Home page</h1>
+            <h1>Прогноз на сегодня</h1>
             <Form searchHandler={search} />
 
-            {(state.cod) ? <h2>{state.name}</h2> : ''}
-            {(state.cod) ? <h2>{state.weather[0].main}: {state.weather[0].description}</h2> : ''}
-            {(state.cod) ? <img src={`${`https://openweathermap.org/img/wn/${state.weather[0].icon}@2x.png`}`}></img> : ''}
-            {(state.cod) ? <h3>temp: {Math.round(state.main.temp - 273.15)} &deg;C</h3> : ''}
-            {(state.cod) ? <h3>wind speed: {Math.round(state.wind.speed)} M/S</h3> : ''}
+            <div class="weather">
+                <div>{(state.cod) ? <h2>1st day</h2> : ''}</div>
+                <div>{(state.cod) ? <h3>{state.weather[0].main}: {state.weather[0].description}</h3> : ''}</div>
+                <div>{(state.cod) ? <img src={`${`https://openweathermap.org/img/wn/${state.weather[0].icon}@2x.png`}`}></img> : ''}</div>
+                <div>{(state.cod) ? <h3>Температура: <span id="temp">{Math.round(state.main.temp - 273.15)} &deg;C</span></h3> : ''}</div>
+                <div>{(state.cod) ? <h3>Скорость ветра: <span id="wind">{Math.round(state.wind.speed)} M/S</span></h3> : ''}</div>
+                <div>{(state.cod) ? <h3>Атмосферное давление: <span id="pressure">{state.main.pressure} hPa</span></h3> : ''}</div>
+            </div>
 
         </div>
     )

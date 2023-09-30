@@ -3,8 +3,8 @@ import { Link } from "react-router-dom"
 export default function Navigation() {
     return (
         <nav>
-            <Link to={'/'}>Home </Link>
-            <Link to={'/week'}>Week </Link>
+            <Link to={'/'}>Прогноз на сегодня<br/> </Link>
+            <Link to={'/week'}>Прогноз на неделю </Link>
         </nav>
     )
 }

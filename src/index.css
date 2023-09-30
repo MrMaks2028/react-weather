@@ -3,6 +3,33 @@
   font-family: Comic Sans MS;
 }
 
+.order {
+  display: flex;
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+
+  border: 3px solid white;
+  margin: 5px;
+}
+
+#temp {
+  color: rgb(242, 68, 52);
+  background-color: azure;
+}
+
+#wind {
+  color: rgb(85, 255, 0);
+  background-color: azure;
+}
+
+#pressure {
+  color: rgb(225, 255, 0);
+  background-color: azure;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
