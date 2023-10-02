@@ -32,8 +32,8 @@ export default function Week() {
                     <div>{(state.cod) ? <h3>{state.list[0].weather[0].main}: {state.list[0].weather[0].description}</h3> : ''}</div>
                     <div>{(state.cod) ? <img src={`${`https://openweathermap.org/img/wn/${state.list[0].weather[0].icon}@2x.png`}`}></img> : ''}</div>
                     <div>{(state.cod) ? <h3>Температура: <span id="temp">{Math.round(state.list[0].main.temp - 273.15)} &deg;C</span></h3> : ''}</div>
-                    <div>{(state.cod) ? <h3>Скорость ветра: <span id="wind">{Math.round(state.list[0].wind.speed)} M/S</span></h3> : ''}</div>
-                    <div>{(state.cod) ? <h3>Атмосферное давление: <span id="pressure">{state.list[0].main.pressure} hPa</span></h3> : ''}</div>
+                    <div>{(state.cod) ? <h3>Скорость ветра: <span id="wind">{Math.round(state.list[0].wind.speed)} М/С</span></h3> : ''}</div>
+                    <div>{(state.cod) ? <h3>Атмосферное давление: <span id="pressure">{state.list[0].main.pressure} гПа</span></h3> : ''}</div>
                 </div>
 
                 <div class="weather">
@@ -41,8 +41,8 @@ export default function Week() {
                     <div>{(state.cod) ? <h3>{state.list[1].weather[0].main}: {state.list[1].weather[0].description}</h3> : ''}</div>
                     <div>{(state.cod) ? <img src={`${`https://openweathermap.org/img/wn/${state.list[1].weather[0].icon}@2x.png`}`}></img> : ''}</div>
                     <div>{(state.cod) ? <h3>Температура: <span id="temp">{Math.round(state.list[1].main.temp - 273.15)} &deg;C</span></h3> : ''}</div>
-                    <div>{(state.cod) ? <h3>Скорость ветра: <span id="wind">{Math.round(state.list[1].wind.speed)} M/S</span></h3> : ''}</div>
-                    <div>{(state.cod) ? <h3>Атмосферное давление: <span id="pressure">{state.list[1].main.pressure} hPa</span></h3> : ''}</div>
+                    <div>{(state.cod) ? <h3>Скорость ветра: <span id="wind">{Math.round(state.list[1].wind.speed)} М/С</span></h3> : ''}</div>
+                    <div>{(state.cod) ? <h3>Атмосферное давление: <span id="pressure">{state.list[1].main.pressure} гПа</span></h3> : ''}</div>
                 </div>
 
                 <div class="weather">
@@ -50,8 +50,8 @@ export default function Week() {
                     <div>{(state.cod) ? <h3>{state.list[2].weather[0].main}: {state.list[2].weather[0].description}</h3> : ''}</div>
                     <div>{(state.cod) ? <img src={`${`https://openweathermap.org/img/wn/${state.list[2].weather[0].icon}@2x.png`}`}></img> : ''}</div>
                     <div>{(state.cod) ? <h3>Температура: <span id="temp">{Math.round(state.list[2].main.temp - 273.15)} &deg;C</span></h3> : ''}</div>
-                    <div>{(state.cod) ? <h3>Скорость ветра: <span id="wind">{Math.round(state.list[2].wind.speed)} M/S</span></h3> : ''}</div>
-                    <div>{(state.cod) ? <h3>Атмосферное давление: <span id="pressure">{state.list[2].main.pressure} hPa</span></h3> : ''}</div>
+                    <div>{(state.cod) ? <h3>Скорость ветра: <span id="wind">{Math.round(state.list[2].wind.speed)} М/С</span></h3> : ''}</div>
+                    <div>{(state.cod) ? <h3>Атмосферное давление: <span id="pressure">{state.list[2].main.pressure} гПа</span></h3> : ''}</div>
                 </div>
 
                 <div class="weather">
@@ -59,8 +59,8 @@ export default function Week() {
                     <div>{(state.cod) ? <h3>{state.list[3].weather[0].main}: {state.list[3].weather[0].description}</h3> : ''}</div>
                     <div>{(state.cod) ? <img src={`${`https://openweathermap.org/img/wn/${state.list[3].weather[0].icon}@2x.png`}`}></img> : ''}</div>
                     <div>{(state.cod) ? <h3>Температура: <span id="temp">{Math.round(state.list[3].main.temp - 273.15)} &deg;C</span></h3> : ''}</div>
-                    <div>{(state.cod) ? <h3>Скорость ветра: <span id="wind">{Math.round(state.list[3].wind.speed)} M/S</span></h3> : ''}</div>
-                    <div>{(state.cod) ? <h3>Атмосферное давление: <span id="pressure">{state.list[3].main.pressure} hPa</span></h3> : ''}</div>
+                    <div>{(state.cod) ? <h3>Скорость ветра: <span id="wind">{Math.round(state.list[3].wind.speed)} М/С</span></h3> : ''}</div>
+                    <div>{(state.cod) ? <h3>Атмосферное давление: <span id="pressure">{state.list[3].main.pressure} гПа</span></h3> : ''}</div>
                 </div>
 
                 <div class="weather">
@@ -68,8 +68,8 @@ export default function Week() {
                     <div>{(state.cod) ? <h3>{state.list[4].weather[0].main}: {state.list[4].weather[0].description}</h3> : ''}</div>
                     <div>{(state.cod) ? <img src={`${`https://openweathermap.org/img/wn/${state.list[4].weather[0].icon}@2x.png`}`}></img> : ''}</div>
                     <div>{(state.cod) ? <h3>Температура: <span id="temp">{Math.round(state.list[4].main.temp - 273.15)} &deg;C</span></h3> : ''}</div>
-                    <div>{(state.cod) ? <h3>Скорость ветра: <span id="wind">{Math.round(state.list[4].wind.speed)} M/S</span></h3> : ''}</div>
-                    <div>{(state.cod) ? <h3>Атмосферное давление: <span id="pressure">{state.list[4].main.pressure} hPa</span></h3> : ''}</div>
+                    <div>{(state.cod) ? <h3>Скорость ветра: <span id="wind">{Math.round(state.list[4].wind.speed)} М/С</span></h3> : ''}</div>
+                    <div>{(state.cod) ? <h3>Атмосферное давление: <span id="pressure">{state.list[4].main.pressure} гПа</span></h3> : ''}</div>
                 </div>
 
                 <div class="weather">
@@ -77,8 +77,8 @@ export default function Week() {
                     <div>{(state.cod) ? <h3>{state.list[5].weather[0].main}: {state.list[5].weather[0].description}</h3> : ''}</div>
                     <div>{(state.cod) ? <img src={`${`https://openweathermap.org/img/wn/${state.list[5].weather[0].icon}@2x.png`}`}></img> : ''}</div>
                     <div>{(state.cod) ? <h3>Температура: <span id="temp">{Math.round(state.list[5].main.temp - 273.15)} &deg;C</span></h3> : ''}</div>
-                    <div>{(state.cod) ? <h3>Скорость ветра: <span id="wind">{Math.round(state.list[5].wind.speed)} M/S</span></h3> : ''}</div>
-                    <div>{(state.cod) ? <h3>Атмосферное давление: <span id="pressure">{state.list[5].main.pressure} hPa</span></h3> : ''}</div>
+                    <div>{(state.cod) ? <h3>Скорость ветра: <span id="wind">{Math.round(state.list[5].wind.speed)} М/С</span></h3> : ''}</div>
+                    <div>{(state.cod) ? <h3>Атмосферное давление: <span id="pressure">{state.list[5].main.pressure} гПа</span></h3> : ''}</div>
                 </div>
 
                 <div class="weather">
@@ -86,8 +86,8 @@ export default function Week() {
                     <div>{(state.cod) ? <h3>{state.list[6].weather[0].main}: {state.list[6].weather[0].description}</h3> : ''}</div>
                     <div>{(state.cod) ? <img src={`${`https://openweathermap.org/img/wn/${state.list[6].weather[0].icon}@2x.png`}`}></img> : ''}</div>
                     <div>{(state.cod) ? <h3>Температура: <span id="temp">{Math.round(state.list[6].main.temp - 273.15)} &deg;C</span></h3> : ''}</div>
-                    <div>{(state.cod) ? <h3>Скорость ветра: <span id="wind">{Math.round(state.list[6].wind.speed)} M/S</span></h3> : ''}</div>
-                    <div>{(state.cod) ? <h3>Атмосферное давление: <span id="pressure">{state.list[6].main.pressure} hPa</span></h3> : ''}</div>        
+                    <div>{(state.cod) ? <h3>Скорость ветра: <span id="wind">{Math.round(state.list[6].wind.speed)} М/С</span></h3> : ''}</div>
+                    <div>{(state.cod) ? <h3>Атмосферное давление: <span id="pressure">{state.list[6].main.pressure} гПа</span></h3> : ''}</div>        
                 </div>
 
             </div>
